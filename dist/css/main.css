@@ -290,4 +290,6 @@ main {
     align-items: center;
     margin-top: 1rem; }
     .boxes div {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  main .lg-heading {
+    font-size: 4rem; } }
