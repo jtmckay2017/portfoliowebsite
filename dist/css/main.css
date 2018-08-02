@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0px;
     padding: 0px;
-    background: #2c232b;
+    background: #1a1a1a;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #3a2e39;
+    background: #272727;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       height: 250px;
       background: url(../img/portrait.jpg);
       border-radius: 50%;
-      border: solid 3px #f2b880; }
+      border: solid 3px #ffe400; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #f2b880; }
+      color: #ffe400; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #f2b880; }
+      color: #ffe400; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,14 +94,13 @@
   box-sizing: border-box; }
 
 body {
-  background: #3a2e39;
+  background: #272727;
   color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -111,8 +110,8 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
-      background: rgba(58, 46, 57, 0.8); }
+      z-index: -2;
+      background: rgba(39, 39, 39, 0.8); }
 
 h1,
 h2,
@@ -128,7 +127,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(64, 51, 63, 0.5); }
+    background: rgba(44, 44, 44, 0.5); }
 
 a {
   color: #fff;
@@ -140,7 +139,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #f2b880; }
+  color: #ffe400; }
 
 main {
   padding: 4rem;
@@ -150,7 +149,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #f2b880;
+        color: #ffe400;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -166,7 +165,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #f2b880 3px solid; }
+    border: #ffe400 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -177,9 +176,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #483947;
+    background: #343434;
     padding: 0.5rem;
-    border-bottom: #f2b880 5px solid; }
+    border-bottom: #ffe400 5px solid; }
 
 .projects {
   display: grid;
@@ -190,7 +189,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #f2b880;
+      border-color: #ffe400;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -199,7 +198,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #f2b880;
+    background: #ffe400;
     color: #000; }
 
 .btn-dark {
@@ -207,7 +206,7 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #bcabbb;
+  background: #a7a7a7;
   color: #333; }
 
 .boxes {
@@ -224,7 +223,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #f2b880;
+      background: #ffe400;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -232,7 +231,7 @@ main {
 .contact-form {
   box-sizing: border-box;
   padding: 1em;
-  background: #3a2e39;
+  background: #272727;
   margin: auto;
   border-radius: 1%; }
   .contact-form form {
@@ -250,9 +249,9 @@ main {
   .contact-form textarea {
     width: 100%;
     padding: 1em;
-    border: 3px solid #2c232b; }
+    border: 3px solid #1a1a1a; }
   .contact-form button {
-    background: #231c23;
+    background: #131313;
     border: 0;
     text-transform: uppercase;
     color: #fff;
@@ -260,7 +259,7 @@ main {
     font-size: 22px; }
     .contact-form button:hover {
       color: #333;
-      background-color: #f2b880;
+      background-color: #ffe400;
       transition: all 0.5s ease-out; }
 
 #sketch-holder {
@@ -278,7 +277,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #1e171d;
+  background: #0e0e0e;
   color: #fff;
   height: 60px; }
 
