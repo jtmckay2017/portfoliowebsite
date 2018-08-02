@@ -180,6 +180,72 @@ main {
   }
 }
 
+.contact-form {
+  box-sizing: border-box;
+  padding: 1em;
+  background: $primary-color;
+  margin: auto;
+  border-radius: 1%;
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button,
+  input,
+  textarea {
+    width: 100%;
+    padding: 1em;
+    border: 3px solid darken($color: $primary-color, $amount: 5);
+  }
+
+  button {
+    background: darken($color: $primary-color, $amount: 8);
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    &:hover {
+      color: #333;
+      background-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//p5.js box
+#sketch-holder {
+  margin: 0;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.cotainer-sketch {
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+//--------------
+
 #main-footer {
   text-align: center;
   padding: 1rem;

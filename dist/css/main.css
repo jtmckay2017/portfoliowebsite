@@ -229,6 +229,52 @@ main {
       .boxes div:hover span {
         color: #000; }
 
+.contact-form {
+  box-sizing: border-box;
+  padding: 1em;
+  background: #3a2e39;
+  margin: auto;
+  border-radius: 1%; }
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; }
+  .contact-form label {
+    display: block;
+    text-align: left;
+    font-size: 1.5em; }
+  .contact-form p {
+    margin: 0; }
+  .contact-form button,
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 3px solid #2c232b; }
+  .contact-form button {
+    background: #231c23;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px; }
+    .contact-form button:hover {
+      color: #333;
+      background-color: #f2b880;
+      transition: all 0.5s ease-out; }
+
+#sketch-holder {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cotainer-sketch h1 {
+  text-align: center; }
+
+.cotainer-sketch p {
+  text-align: center; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -238,11 +284,17 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .contact-form {
+    display: grid;
+    max-width: 50%; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .contact-form {
+    display: grid;
+    max-width: 70%; } }
 
 @media screen and (max-width: 768px) {
   main {

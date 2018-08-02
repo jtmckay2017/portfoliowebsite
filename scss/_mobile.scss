@@ -3,12 +3,20 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  .contact-form {
+    display: grid;
+    max-width: 50%;
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-form {
+    display: grid;
+    max-width: 70%;
   }
 }
 
