@@ -50,6 +50,10 @@ $(document).ready(function() {
       //statusElm.append("<div>Email is valid </div>");
     } else {
       event.preventDefault();
+      if (statusElm.length != 0) {
+        statusElm.empty();
+        console.log("empty");
+      }
       statusElm.append("<div>*Email is not valid.</div>");
     }
 
