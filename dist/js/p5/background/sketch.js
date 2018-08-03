@@ -1,8 +1,8 @@
 //Joel McKay
 
-function setup() {}
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  calcWave();
+  setup();
 }
 
 var xspacing = 8; // Distance between each horizontal location
@@ -23,13 +23,13 @@ function setup() {
   canvas.style("display", "block");
   canvas.position(0, 0);
   canvas.style("z-index", "-1");
-  frameRate(60);
+  frameRate(50);
   colorMode(RGB, 255, 255, 255, 100);
   w = width + 16;
 
   for (var i = 0; i < maxwaves; i++) {
-    amplitude[i] = random(10, 60);
-    var period = random(100, 800); // Num pixels before wave repeats
+    amplitude[i] = random(10, 80);
+    var period = random(500, 800); // Num pixels before wave repeats
     dx[i] = (TWO_PI / period) * xspacing;
   }
 
@@ -37,7 +37,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(41, 41, 41);
   calcWave();
   renderWave();
 }
@@ -70,6 +70,6 @@ function renderWave() {
   fill(255, 50);
   ellipseMode(CENTER);
   for (var x = 0; x < yvalues.length; x++) {
-    ellipse(x * xspacing, width / 2 + yvalues[x], 16, 16);
+    ellipse(x * xspacing, height / 2 + yvalues[x], 16, 16);
   }
 }
